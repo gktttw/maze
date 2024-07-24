@@ -6,19 +6,15 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+3.0.0
 
 * System dependencies
 
 * Configuration
 
 * Database creation
+dev: docker run --name maze_development -d -p 5432:5432 -e POSTGRES_DB=maze_development -e POSTGRES_USER=maze_user -e POSTGRES_PASSWORD=maze_password postgres
 
 * Database initialization
+dev: rails db:migrate
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
